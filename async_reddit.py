@@ -41,4 +41,3 @@ async def findvideo(key_word):
                                 with youtube_dl.YoutubeDL(ydl_opts) as ydl: 
                                     ydl.download([video_url])
                             break
-asyncio.run(findvideo('Animal'))
