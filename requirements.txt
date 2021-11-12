@@ -1,0 +1,7 @@
+aiogram==2.15
+aioschedule==0.5.2
+asyncpraw==7.4.0
+http3==0.6.7
+youtube_dl==2021.6.6
+heroku==0.1.4
+pyTelegramBotAPI==4.1.1
