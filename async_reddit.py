@@ -37,7 +37,10 @@ async def findvideo(key_word):
                                     if i == video_name+'.mp4':
                                         os.remove(i)
                                 x = x + 1
-                                ydl_opts = {'outtmpl': f'{video_name}', 'format': 'bestvideo + bestaudio'}
-                                with youtube_dl.YoutubeDL(ydl_opts) as ydl: 
-                                    ydl.download([video_url])
+                                try:
+	                                ydl_opts = {'outtmpl': f'{video_name}', 'format': 'bestvideo + bestaudio'}
+	                                with youtube_dl.YoutubeDL(ydl_opts) as ydl: 
+	                                    ydl.download([video_url])
+                                except:
+                                    x = x - 1
                             break
